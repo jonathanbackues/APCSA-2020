@@ -262,7 +262,7 @@ public class Review {
                endInd = reviewText.length();
             }
          } 
-      
+       
 
         adj = reviewText.substring(beginInd, endInd);
         newAdj = randomAdjective();
