@@ -15,9 +15,9 @@ public class SnowMan extends AbstractShape
 
    public void draw(Graphics window)
    {
-	   window.drawOval(getXPos(), getYPos(), getWidth(), getHeight());
-	   window.drawOval(getXPos()-(((int)(2*getWidth())-getWidth())/2),getYPos()+getHeight(), (int)(2*getWidth()),(int)(2*getHeight()));
-	   window.drawOval(getXPos()-(((int)(3*getWidth())-getWidth())/2),getYPos()+getHeight()+(int)(2*getHeight()), (int)(3*getWidth()),(int)(3*getHeight()));
+	   window.fillOval(getXPos(), getYPos(), getWidth(), getHeight());
+	   window.fillOval(getXPos()-(((int)(2*getWidth())-getWidth())/2),getYPos()+getHeight(), (int)(2*getWidth()),(int)(2*getHeight()));
+	   window.fillOval(getXPos()-(((int)(3*getWidth())-getWidth())/2),getYPos()+getHeight()+(int)(2*getHeight()), (int)(3*getWidth()),(int)(3*getHeight()));
    }
 
    public void moveAndDraw(Graphics window)
