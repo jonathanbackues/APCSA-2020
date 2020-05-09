@@ -51,8 +51,6 @@ public class WinterScenePanel extends JPanel implements Runnable
 			shap.moveAndDraw(window);
 		}
 		tree.draw(window);
-		cloud1.moveAndDraw(window);
-		cloud2.moveAndDraw(window);
 	}
 
    public void run()
