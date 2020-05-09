@@ -29,7 +29,7 @@ public class WinterScenePanel extends JPanel implements Runnable
 			shapes.add(new FancySnowFlake(20+(int)(780*Math.random()),20+(int)(800*Math.random()),rando,rando,2+(int)(Math.random()*4)));
 		}
 		sMan = new SnowMan(650,420,50,50);
-		tree =  new Tree(150,359,130,400);
+		tree =  new Tree(350,359,50,400);
 		new Thread(this).start();
 	}
 
