@@ -18,8 +18,6 @@ public class WinterScenePanel extends JPanel implements Runnable
 	private List<AbstractShape> shapes = new ArrayList<AbstractShape>();
 	private AbstractShape sMan;
 	private Tree tree;
-	private Cloud cloud1;
-	private Cloud cloud2;
 	public WinterScenePanel()
 	{
 		setVisible(true);
@@ -32,8 +30,6 @@ public class WinterScenePanel extends JPanel implements Runnable
 		}
 		sMan = new SnowMan(650,420,50,50);
 		tree =  new Tree(150,359,130,400);
-		cloud1 = new Cloud(400,70,70,50,3);
-		cloud2 = new Cloud(300,100,60,40,5);
 		new Thread(this).start();
 	}
 
