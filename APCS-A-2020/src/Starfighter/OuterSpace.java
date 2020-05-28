@@ -74,7 +74,7 @@ public class OuterSpace extends Canvas implements KeyListener, Runnable
 
 		graphToBack.setColor(Color.BLUE);
 		graphToBack.drawString("StarFighter ", 25, 50 );
-		graphToBack.setColor(new Color(49, 176, 212));
+		graphToBack.setColor(Color.black);
 		graphToBack.fillRect(0,0,800,650);
 		
 		if(keys[0] == true)
@@ -202,13 +202,13 @@ public class OuterSpace extends Canvas implements KeyListener, Runnable
 	}
 	public void scoreUpdater(Graphics graphToBack) {
 		
-		Font f = new Font("Arial", Font.PLAIN, 30);
+		Font f = new Font("Arial", Font.PLAIN, 20);
 		graphToBack.setFont(f);
-		graphToBack.setColor(new Color(255, 81, 23));
+		graphToBack.setColor(new Color(255,255,255));
 		if(lose==true) {
 			horde.clearHorde();
 			
-			graphToBack.drawString(String.format("YOU LOSE! FINAL SCORE: %s (Press R To Try Again)",count), 40, 610);
+			graphToBack.drawString(String.format("You Lost! Score: %s (Press R To Try Again)",count), 200, 610);
 			if(keys[5]==true) {
 				horde = new AlienHorde(hordeNum);
 				count=0;
@@ -218,7 +218,7 @@ public class OuterSpace extends Canvas implements KeyListener, Runnable
 			}
 		}
 		else if(horde.getHorde().size()==0) { 
-			graphToBack.drawString(String.format("YOU WIN! FINAL SCORE: %s (Press R To Play Again)",count), 40, 600);
+			graphToBack.drawString(String.format("You Won! Score: %s (Press R To Play Again)",count), 200, 600);
 			if(keys[5]==true) {
 				horde = new AlienHorde(hordeNum);
 				count=0;
