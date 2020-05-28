@@ -26,8 +26,8 @@ public class Alien extends MovingThing
 		speed = 5;
 		try
 		{
-			URL url = getClass().getResource("UFO.png");
-			image = ImageIO.read(url);
+			URL url = getClass().getResource("alien.jpg");
+            image = ImageIO.read(url);
 		}
 		catch(Exception e)
 		{
@@ -42,8 +42,8 @@ public class Alien extends MovingThing
 		speed = s;
 		try
 		{
-			URL url = getClass().getResource("UFO.png");
-			image = ImageIO.read(url);
+			URL url = getClass().getResource("alien.jpg");
+            image = ImageIO.read(url);
 		}
 		catch(Exception e)
 		{
@@ -57,8 +57,8 @@ public class Alien extends MovingThing
 		speed=s;
 		try
 		{
-			URL url = getClass().getResource("UFO.png");
-			image = ImageIO.read(url);
+			URL url = getClass().getResource("alien.jpg");
+            image = ImageIO.read(url);
 		}
 		catch(Exception e)
 		{
